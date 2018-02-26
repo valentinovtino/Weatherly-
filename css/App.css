@@ -1,0 +1,57 @@
+.error {
+  position: absolute;
+  top: 193px;
+  right: 235px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.loading-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #7084a9;
+}
+
+#loading-icon {
+  margin: auto;
+  display: block;
+}
+
+.backGround {
+  background-image: url('../images/background1.jpg');
+    background-repeat-x: no-repeat;
+    background-repeat-y: repeat;
+    background-size: 407px;
+    background-position: right;
+}
+
+.change-city {
+  width: 25%;
+  height: 25px;
+  margin-left: 60%;
+  font-size: 25px;
+
+}
+
+.change-city-btn {
+  width: 5%;
+  height:25px;
+  border: none;
+  background-color: #DB634B;
+  color: white;
+}
+
+.search-container {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .aang-bending {
+    display: none;
+  }
+}
