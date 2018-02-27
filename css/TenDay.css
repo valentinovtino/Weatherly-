@@ -23,6 +23,7 @@
 }
 
 .tenday-card {
-  width: 90%;
+  width: 30em;
+  margin-left: 17px;
   max-width: 800px;
 }
