@@ -3,3 +3,11 @@
   padding: 10px;
   color: #e6e8fa;
 }
+
+.city-title {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.currFont {
+  font-family: 'Cutive Mono', monospace;
+}

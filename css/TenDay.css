@@ -20,10 +20,12 @@
   margin: 10px;
   box-sizing: border-box;
   opacity: .8;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .tenday-card {
   width: 30em;
   margin-left: 17px;
   max-width: 800px;
+
 }
