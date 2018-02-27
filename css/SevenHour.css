@@ -1,0 +1,24 @@
+.hourly-card-cont {
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-radius: 41px;
+  margin-left: 22px;
+}
+
+.seven-hour {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 19px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.seven-hour-cont {
+  width: 157px;;
+  display: inline-block;
+  background-color: grey;
+  opacity: .5;
+}

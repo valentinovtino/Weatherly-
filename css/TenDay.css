@@ -1,0 +1,28 @@
+.day-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  padding-bottom: 70px;
+}
+
+.ten-day {
+  display: flex;
+  flex-direction: row;
+  border-width: medium;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 2px 3px #000000;
+  justify-content: center;
+  max-width: 800px;
+  background-color: #eee8f3;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  opacity: .8;
+}
+
+.tenday-card {
+  width: 90%;
+  max-width: 800px;
+}
