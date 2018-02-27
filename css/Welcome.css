@@ -8,3 +8,90 @@
   display: flex;
   flex-direction: column;
 }
+
+
+.submit {
+  width: 97px;
+  height: 52px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background-color: #DB634B;
+  color: white;
+  border-left: 2px solid #37363B;
+}
+
+.submit-city-form {
+  border: 2px solid #37363B;
+  display: flex;
+  justify-content: center;
+  width: 704px;
+  margin: 0 auto;
+}
+
+#title {
+  font-family: 'Dr Sugiyama', cursive;
+  text-align: center;
+  margin: 19px 0 0 0;
+  color: #e6e8fa;
+  font-size: 90px;
+}
+
+#city-input {
+  width: 600px;
+  height: 49.5px;
+  border: none;
+  font-size: 25px;
+}
+
+#city-input::placeholder {
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+}
+
+.suggestedCities {
+  border: 1px solid black;
+  width: 100%;
+  height: 30px;
+  /*margin-top: 1px;*/
+  /*margin-bottom: 1px;*/
+  margin: 0;
+  background-color: grey;
+  opacity: .8;
+
+}
+
+.suggestedCities:hover {
+  font: white;
+  opacity: 1;
+}
+
+.suggest-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 200px;
+  overflow: scroll;
+  border: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .Front-page {
+    width: 150vw;
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #city-input {
+    width: 300px;
+    margin-left: 31px;
+  }
+
+  .submit-city-form {
+    border: none;
+  }
+
+
+}

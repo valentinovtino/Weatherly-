@@ -18,11 +18,13 @@
 }
 
 .backGround {
-  /*background-image: url('../images/background1.jpg');*/
-    background-repeat-x: no-repeat;
-    background-repeat-y: repeat;
-    background-size: 407px;
-    background-position: right;
+  width: 100%;
+  background-image: url('../Images/sunrise.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .change-city {
