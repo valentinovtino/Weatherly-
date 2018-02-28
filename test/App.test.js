@@ -44,4 +44,37 @@ describe('App', () => {
     expect(window.localStorage.store.location).toEqual('Louisville, KY')
   })
 
+    it('should set the state.inputCity when user types in a city', () => {
+    expect(wrapper.state().inputCity).toEqual('')
+    expect(wrapper.state().suggestedCities).toEqual([]) 
+
+    wrapper.find('input').simulate('change', {target: {value: 'Denver, CO'}})
+
+    expect(wrapper.state().inputCity).toEqual('Denver, CO')
+    expect(wrapper.state().suggestedCities).toEqual([])
+  })
+
+  it('should set the inputCity text into localStorage when button is clicked', () => {
+    expect(wrapper.state().inputCity).toEqual('')
+
+    wrapper.find('input').simulate('change', {target: {value: 'Denver, CO'}})
+    wrapper.find('button').simulate('click');
+
+    expect(wrapper.state().inputCity).toEqual('Denver, CO')
+    expect(JSON.parse(localStorage.location).inputCity).toEqual('Denver, CO')
+
+  })
+
+  it('should set the suggestedCities array when an incomplete city is typed into the input field', () => {
+    expect(wrapper.state().inputCity).toEqual('')
+
+    wrapper.find('input').simulate('change', {target: {value: 'Bou'}})
+    wrapper.find('button').simulate('click');
+    
+    expect(wrapper.state().inputCity).toEqual('Bou')
+    expect(JSON.parse(localStorage.location).suggestedCities).toEqual(['boulder, co', 'bountiful, ut'])
+
+  })
 })
+
+
